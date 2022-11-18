@@ -9,9 +9,6 @@ class Ui(QMainWindow) :
         super(Ui, self).__init__()
         uic.loadUi("main.ui", self)
         self.show()
-        self.btn_hndl()
-     
-    def btn_hndl(self):
         self.calculer.clicked.connect(self.age_calc)    
     
     
